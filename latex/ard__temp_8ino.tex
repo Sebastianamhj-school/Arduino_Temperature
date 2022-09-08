@@ -1,0 +1,127 @@
+\hypertarget{ard__temp_8ino}{}\doxysection{ard\+\_\+temp.\+ino File Reference}
+\label{ard__temp_8ino}\index{ard\_temp.ino@{ard\_temp.ino}}
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ard__temp_8ino_af06b1fddad7167b1a2b449e58f94dd3b}{BLED}}~2
+\item 
+\#define \mbox{\hyperlink{ard__temp_8ino_a8e04e561ec5b6f01550480111368afb3}{YLED}}~3
+\item 
+\#define \mbox{\hyperlink{ard__temp_8ino_a8c76bc2b2306718fbc6932d6ada612f3}{RLED}}~4
+\item 
+\#define \mbox{\hyperlink{ard__temp_8ino_a280feb883e9d4a7edcc69c8bcb9f38f2}{ADDRESS}}~0x48
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ard__temp_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{ard__temp_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\item 
+int \mbox{\hyperlink{ard__temp_8ino_a35f6898dac64d03c8edea34c95a89b2c}{analog\+Temp\+Reader}} (int temp\+Buffer)
+\begin{DoxyCompactList}\small\item\em Reads the potentiometer, to get the wanted tempeture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ard__temp_8ino_a1717f829c40e6367f53179ad8572e378}{temp\+Setup}} (byte address)
+\begin{DoxyCompactList}\small\item\em Setup the temperature sensor DS1621. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{ard__temp_8ino_a5606606c5601b312521e9f9ca0db8e7c}{temp\+Read}} (int address)
+\begin{DoxyCompactList}\small\item\em Reads the temperate from the DS1621. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ard__temp_8ino_aa7b2332c6229e8a16a97cd95471caf92}{set\+Lights}} (int current\+Temp, int wanted\+Temp)
+\begin{DoxyCompactList}\small\item\em Handle the LED depending on temperature and the wanted temperature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ard__temp_8ino_a4c1cae56565a1ed870a2baba45175f89}{last\+Analog\+Temp}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ard__temp_8ino_a280feb883e9d4a7edcc69c8bcb9f38f2}\label{ard__temp_8ino_a280feb883e9d4a7edcc69c8bcb9f38f2}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!ADDRESS@{ADDRESS}}
+\index{ADDRESS@{ADDRESS}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{ADDRESS}{ADDRESS}}
+{\footnotesize\ttfamily \#define ADDRESS~0x48}
+
+\mbox{\Hypertarget{ard__temp_8ino_af06b1fddad7167b1a2b449e58f94dd3b}\label{ard__temp_8ino_af06b1fddad7167b1a2b449e58f94dd3b}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!BLED@{BLED}}
+\index{BLED@{BLED}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{BLED}{BLED}}
+{\footnotesize\ttfamily \#define BLED~2}
+
+\mbox{\Hypertarget{ard__temp_8ino_a8c76bc2b2306718fbc6932d6ada612f3}\label{ard__temp_8ino_a8c76bc2b2306718fbc6932d6ada612f3}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!RLED@{RLED}}
+\index{RLED@{RLED}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{RLED}{RLED}}
+{\footnotesize\ttfamily \#define RLED~4}
+
+\mbox{\Hypertarget{ard__temp_8ino_a8e04e561ec5b6f01550480111368afb3}\label{ard__temp_8ino_a8e04e561ec5b6f01550480111368afb3}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!YLED@{YLED}}
+\index{YLED@{YLED}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{YLED}{YLED}}
+{\footnotesize\ttfamily \#define YLED~3}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ard__temp_8ino_a35f6898dac64d03c8edea34c95a89b2c}\label{ard__temp_8ino_a35f6898dac64d03c8edea34c95a89b2c}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!analogTempReader@{analogTempReader}}
+\index{analogTempReader@{analogTempReader}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{analogTempReader()}{analogTempReader()}}
+{\footnotesize\ttfamily int analog\+Temp\+Reader (\begin{DoxyParamCaption}\item[{int}]{temp\+Buffer }\end{DoxyParamCaption})}
+
+
+
+Reads the potentiometer, to get the wanted tempeture. 
+
+\mbox{\Hypertarget{ard__temp_8ino_afe461d27b9c48d5921c00d521181f12f}\label{ard__temp_8ino_afe461d27b9c48d5921c00d521181f12f}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!loop@{loop}}
+\index{loop@{loop}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Round the reading value to the nearest 5,\mbox{\Hypertarget{ard__temp_8ino_aa7b2332c6229e8a16a97cd95471caf92}\label{ard__temp_8ino_aa7b2332c6229e8a16a97cd95471caf92}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!setLights@{setLights}}
+\index{setLights@{setLights}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{setLights()}{setLights()}}
+{\footnotesize\ttfamily void set\+Lights (\begin{DoxyParamCaption}\item[{int}]{current\+Temp,  }\item[{int}]{wanted\+Temp }\end{DoxyParamCaption})}
+
+
+
+Handle the LED depending on temperature and the wanted temperature. 
+
+\mbox{\Hypertarget{ard__temp_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{ard__temp_8ino_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!setup@{setup}}
+\index{setup@{setup}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ard__temp_8ino_a5606606c5601b312521e9f9ca0db8e7c}\label{ard__temp_8ino_a5606606c5601b312521e9f9ca0db8e7c}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!tempRead@{tempRead}}
+\index{tempRead@{tempRead}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{tempRead()}{tempRead()}}
+{\footnotesize\ttfamily double temp\+Read (\begin{DoxyParamCaption}\item[{int}]{address }\end{DoxyParamCaption})}
+
+
+
+Reads the temperate from the DS1621. 
+
+\mbox{\Hypertarget{ard__temp_8ino_a1717f829c40e6367f53179ad8572e378}\label{ard__temp_8ino_a1717f829c40e6367f53179ad8572e378}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!tempSetup@{tempSetup}}
+\index{tempSetup@{tempSetup}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{tempSetup()}{tempSetup()}}
+{\footnotesize\ttfamily void temp\+Setup (\begin{DoxyParamCaption}\item[{byte}]{address }\end{DoxyParamCaption})}
+
+
+
+Setup the temperature sensor DS1621. 
+
+Access Config
+
+Start Convert
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ard__temp_8ino_a4c1cae56565a1ed870a2baba45175f89}\label{ard__temp_8ino_a4c1cae56565a1ed870a2baba45175f89}} 
+\index{ard\_temp.ino@{ard\_temp.ino}!lastAnalogTemp@{lastAnalogTemp}}
+\index{lastAnalogTemp@{lastAnalogTemp}!ard\_temp.ino@{ard\_temp.ino}}
+\doxysubsubsection{\texorpdfstring{lastAnalogTemp}{lastAnalogTemp}}
+{\footnotesize\ttfamily int last\+Analog\+Temp = 0}
+
